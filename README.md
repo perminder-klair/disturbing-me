@@ -6,6 +6,7 @@ Created this boilerplate for my personal use, but feel free to fork and use it!
 
 - twbs:bootstrap - Bootstrap-styled accounts-ui with multi-language support.
 - ian:accounts-ui-bootstrap-3 - Simple templates to add login widgets to an app
+- accounts-password - Password support for accounts
 - alanning:roles - Role-based authorization
 - aldeed:autoform - Easily create forms with automatic insert and update, and automatic reactive validation.
 - aldeed:collection2 - Automatic validation of insert and update operations on the client and server.
