@@ -2,6 +2,40 @@
 
 Created this boilerplate for my personal use, but feel free to fork and use it!
 
+## Start App
+
+`meteor --settings settings.json`
+
+## To deploy
+
+`meteor build .`
+
+Then extract tar file on server and run following:
+
+`PORT=3000 ROOT_URL='http://localhost' MONGO_URL='mongodb://localhost:27017/database-name' node main.js`
+
+## DIRECTORY STRUCTURE
+
+```
+client                  directory only runs on the client
+	helpers/			contains client shared configurations
+	lib/        		contains client libraries
+	styles/			    contains application CSS or SCSS files
+	templates/			contains the entry script and Web resources
+lib                     loaded before anything else
+	collections/		contains mongo collections
+	router/        		contains routing files
+packages                contains npm dependent 3rd-party packages
+private                 contains private files
+public                  contains static assets (fonts, images, etc.)
+server                  directory only runs on the server
+	helpers/			contains server shared configurations
+	lib/        		contains server libraries
+	methods/			contains methods
+	publications/		contains publications
+	startup/		    contains server's startup files
+```
+
 ## Packages
 
 - twbs:bootstrap - Bootstrap-styled accounts-ui with multi-language support.
