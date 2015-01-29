@@ -65,7 +65,7 @@ server                  directory only runs on the server
 `autopublish` and `insecure`
 
 ## Bug tracker and feature requests
-If you find any bugs or have a feature request?, please create an issue at [issue tracker for project Github repository](https://github.com/perminder-klair/kato/issues).
+If you find any bugs or have a feature request?, please create an issue at [issue tracker for project Github repository](https://github.com/perminder-klair/Meteor-Boilerplate/issues).
 
 ## License
 This work is licensed under a MIT license. Full text is included in the `LICENSE` file in the root of codebase.
