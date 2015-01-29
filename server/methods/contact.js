@@ -1,10 +1,3 @@
-Contact.allow({
-    'insert': function () {
-        // anyone allowed to insert
-        return true;
-    }
-});
-
 Meteor.methods({
     'sendContactEmail': function (data) {
         this.unblock();
