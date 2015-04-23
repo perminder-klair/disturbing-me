@@ -59,6 +59,7 @@ server                  directory only runs on the server
 - `stevezhu:sass` - Meteor package for using sass or scss stylesheets.
 - `underscore` - Collection of small helpers: _.map, _.each, ...
 - `sacha:spin` - Simple spinner package for Meteor
+- `matb33:collection-hooks` - Extends Mongo.Collection with before/after hooks for insert/update/remove/find/findOne   
 
 #### Removed Packages
 
