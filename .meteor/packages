@@ -22,7 +22,6 @@ meteorhacks:fast-render
 meteorhacks:kadira
 meteorhacks:npm
 momentjs:moment
-stevezhu:sass
 underscore
 sacha:spin
 
@@ -30,3 +29,5 @@ sacha:spin
 npm-container
 accounts-password
 matb33:collection-hooks
+fourseven:scss
+mrt:flash-messages

@@ -1,6 +1,6 @@
-# Meteor Boilerplate
+# You are disturbing me
 
-Created this boilerplate for my personal use, but feel free to fork and use it!
+Official code of youaredisturbing.me
 
 ## Start App
 

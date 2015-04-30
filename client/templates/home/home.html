@@ -2,9 +2,25 @@
     <div class="container">
 
         <div class="starter-template">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+			{{> flashMessages}}
+			
+			{{#autoForm schema=formSchema id="insertDisturbForm" type="method" meteormethod="insertLog"}}
+				<fieldset>
+				  <legend>Disturb Log</legend>
+				  {{> afQuickField name='reason'}}
+				</fieldset>
+				<button type="submit" class="btn btn-danger">Report</button>
+			{{/autoForm}}
+			
+			<p>You have been disturbed {{counter}} times.</p>
+			
         </div>
+		
+		<h3>
+			Recent disturbs
+		</h3>
+		
+		{{> reactiveTable class="table table-bordered table-hover" settings=recentLog}}
 
     </div>
 </template>
