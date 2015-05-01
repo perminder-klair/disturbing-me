@@ -14,6 +14,31 @@ Then extract tar file on server and run following:
 
 `PORT=3000 ROOT_URL='http://localhost' MONGO_URL='mongodb://localhost:27017/database-name' node main.js`
 
+## Build for Android
+
+```
+meteor build ~/Desktop --server=5.101.101.205:1986
+```
+
+Then to publish:
+
+[https://github.com/meteor/meteor/wiki/How-to-submit-your-Android-app-to-Play-Store](https://github.com/meteor/meteor/wiki/How-to-submit-your-Android-app-to-Play-Store)
+
+```
+keytool -genkey -alias youAreDisturbingMe -keyalg RSA -keysize 2048 -validity 10000
+```
+
+Password is: `disturb`
+
+```
+jarsigner -digestalg SHA1 unaligned.apk youAreDisturbingMe
+```
+
+```
+~/.meteor/android_bundle/android-sdk/build-tools/20.0.0/zipalign 4 unaligned.apk production.apk
+```
+
+
 ## DIRECTORY STRUCTURE
 
 ```
