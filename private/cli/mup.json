@@ -1,22 +1,24 @@
 {
   "servers": [
     {
-      "host": "hostname",
-      "username": "root",
-      "password": "password"
+      	"host": "5.101.101.205",
+      	"username": "root",
+		"pem": "~/.ssh/id_rsa"
     }
   ],
 
-  "setupMongo": true,
+  "setupMongo": false,
   "setupNode": true,
-  "nodeVersion": "0.10.31",
+  "nodeVersion": "0.10.36",
   "setupPhantom": true,
 
-  "appName": "APP NAME HERE",
-  "app": "__appPath__",
+  "appName": "youAreDisturbingMe",
+  "app": "../../",
 
   "env": {
-    "ROOT_URL": "__rootUrl__"
+    "ROOT_URL": "http://5.101.101.205:1986/",
+    "PORT": "1986",
+    "MONGO_URL": "mongodb://disturb:disturb@dogen.mongohq.com:10063/disturbing-me"
   },
 
   "deployCheckWaitTime": 15
